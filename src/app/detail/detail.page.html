@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>User Detail</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list *ngFor="let items of items | async">
+        <ion-item>
+            <ion-text>Firstname: {{ items.firstname}} </ion-text>
+        </ion-item>
+        <ion-item>
+            <ion-text>Lastname: {{ items.lastname}}</ion-text>
+        </ion-item>
+        <ion-item>
+            <ion-text>Username: {{ items.username}}</ion-text>
+        </ion-item>
+        <ion-item>
+            <ion-text>Email: {{ items.email}}</ion-text>
+        </ion-item>
+    </ion-list>
+</ion-content>
