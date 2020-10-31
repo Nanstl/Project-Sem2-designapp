@@ -2,7 +2,8 @@
 
   <!-- Pull down to refresh -->
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
-    <ion-refresher-content pullingIcon="arrow-dropdown" refreshingSpiner="circles" refreshingText="Refreshing"></ion-refresher-content>
+    <ion-refresher-content pullingIcon="arrow-dropdown" refreshingSpiner="circles" refreshingText="Refreshing">
+    </ion-refresher-content>
   </ion-refresher>
   <!-- Pull down to refresh -->
 
@@ -19,7 +20,7 @@
 
     <!-- Slide right to show edit-->
     <ion-item-options side="start" (click)="checkIn(item.detail)">
-      <ion-item-option color="warning" expandable >
+      <ion-item-option color="warning" expandable>
         Edit
       </ion-item-option>
     </ion-item-options>
@@ -44,7 +45,7 @@
     <!-- Imformation -->
 
     <!-- Slide left to show delete-->
-    <ion-item-options side="end"  (click)="delNote(item.detail)">
+    <ion-item-options side="end" (click)="delNote(item.detail)">
       <ion-item-option color="danger" expandable>
         Delete
       </ion-item-option>
@@ -57,7 +58,7 @@
 
 
 
-<!-- Form Add and Edit-->
+  <!-- Form Add and Edit-->
   <form>
     <div class="formAdd">
       <ion-item>
@@ -86,6 +87,6 @@
       <ion-button (click)="clearStorage()" color="danger" expand="full">Clear Storage</ion-button>
     </div>
   </form>
-<!-- Form Add and Edit-->
+  <!-- Form Add and Edit-->
 
 </ion-content>

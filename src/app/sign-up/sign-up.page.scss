@@ -1,37 +1,37 @@
-ion-content{
+ion-content {
     font-family: 'Mitr', sans-serif;
     font-weight: 400;
-    --ion-background-color:#fff;
+    --ion-background-color: #fff;
 }
 
-.title{
+.title {
     align-items: center;
 }
 
-h1{
+h1 {
     margin: 0px;
     padding: 0px;
 }
 
-.titlesignin{
+.titlesignin {
     margin-left: 5%;
     font-size: 32px;
     color: #303030;
 }
 
-.close{
-    fill:#E8BD06;
+.close {
+    fill: #E8BD06;
     align-items: center;
 }
 
 ion-item {
     color: #303030;
-    --background : #fff;
-    --border-color:#E8BD06 ;
+    --background: #fff;
+    --border-color: #E8BD06;
     width: 95%;
-  }
+}
 
-  .btnSign {
+.btnSign {
     font-weight: 400;
     font-size: 20px;
     width: 75%;
@@ -40,11 +40,18 @@ ion-item {
     margin-top: 10%;
 }
 
-.fogotpass{
+.fogotpass {
     color: #303030;
     text-align: center;
     font-size: 12px;
 }
-.ion-text-center{
+
+.ion-text-center {
     text-align: center
+}
+
+.error {
+    text-align: center;
+    color: red;
+    font-size: 12px;
 }

@@ -14,11 +14,11 @@ export class SignUpPage implements OnInit {
   password;
   firstname;
   lastname;
+  error;
   constructor(
     private modalController: ModalController,
     private afb: AngularFireAuth,
-    private dbfb: AngularFireDatabase,
-
+    private dbfb: AngularFireDatabase
   ) {}
 
   ngOnInit() {}
@@ -42,6 +42,10 @@ export class SignUpPage implements OnInit {
         }
         this.afb.auth.currentUser.sendEmailVerification();
       })
-      .catch((error: any) => console.error(error));
+      .catch((errors: any) => {
+        console.log(errors);
+        this.error = errors.message;
+        console.log(this.error);
+      });
   }
 }
